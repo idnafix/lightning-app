@@ -77,6 +77,8 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
+  - RNSVG (9.4.0):
+    - React
   - UMBarCodeScannerInterface (1.0.0)
   - UMCameraInterface (1.0.0)
   - UMConstantsInterface (1.0.0)
@@ -121,6 +123,7 @@ DEPENDENCIES:
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTVibration (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
+  - RNSVG (from `../node_modules/react-native-svg`)
   - UMBarCodeScannerInterface (from `../node_modules/unimodules-barcode-scanner-interface/ios`)
   - UMCameraInterface (from `../node_modules/unimodules-camera-interface/ios`)
   - UMConstantsInterface (from `../node_modules/unimodules-constants-interface/ios`)
@@ -175,6 +178,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
+  RNSVG:
+    :path: "../node_modules/react-native-svg"
   UMBarCodeScannerInterface:
     :path: !ruby/object:Pathname
     path: "../node_modules/unimodules-barcode-scanner-interface/ios"
@@ -229,6 +234,7 @@ SPEC CHECKSUMS:
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 130b87b2d5e2baac646954282cab87be986d98fc
+  RNSVG: 9cb6e958c4b6a1f58185ac72a350b148947d6fed
   UMBarCodeScannerInterface: e5c8c1a9b1a3724169601da09ece11ba742fe574
   UMCameraInterface: fab8201fb49679a4951dbee4bc9de43c4771207f
   UMConstantsInterface: 661f05e74c4de53030b25e6a64e5e116eecf4bef
@@ -243,6 +249,6 @@ SPEC CHECKSUMS:
   UMTaskManagerInterface: 4640d2fed78f46943d2e7fc37318b9749a0f8106
   yoga: 32d7ef1081951e9a35a4c72a7be797598b138a48
 
-PODFILE CHECKSUM: ad706e2a7e8876072d333296ee43d385706078d1
+PODFILE CHECKSUM: 0b2372adcbabec87691369bcafde189cd854bf11
 
 COCOAPODS: 1.6.1
