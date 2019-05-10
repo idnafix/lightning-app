@@ -18,6 +18,8 @@ PODS:
     - UMPermissionsInterface
   - EXRandom (4.0.0):
     - UMCore
+  - EXSecureStore (4.0.0):
+    - UMCore
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
@@ -98,6 +100,7 @@ DEPENDENCIES:
   - EXFont (from `../node_modules/expo-font/ios`)
   - EXPermissions (from `../node_modules/expo-permissions/ios`)
   - EXRandom (from `../node_modules/expo-random/ios`)
+  - EXSecureStore (from `../node_modules/expo-secure-store/ios`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - React/Core (from `../node_modules/react-native`)
@@ -156,6 +159,9 @@ EXTERNAL SOURCES:
   EXRandom:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-random/ios"
+  EXSecureStore:
+    :path: !ruby/object:Pathname
+    path: "../node_modules/expo-secure-store/ios"
   Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
   glog:
@@ -211,6 +217,7 @@ SPEC CHECKSUMS:
   EXFont: cc0ae3163b8c8a7a350b5f86157fab71a81d8db8
   EXPermissions: 615f9e58b861a3a82bbf9784483c2fb34e75c751
   EXRandom: 64865f46eecf7f762eadfd099ab858ed3ea90689
+  EXSecureStore: 504d601a5102806cc0e01d8338ed1846090531f0
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 130b87b2d5e2baac646954282cab87be986d98fc
