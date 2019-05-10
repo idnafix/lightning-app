@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
+import * as Font from 'expo-font';
 import * as Random from 'expo-random';
+
+// required to setup expo-font
+StyleSheet.setStyleAttributePreprocessor('fontFamily', Font.processFontFamily);
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
