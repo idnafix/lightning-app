@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
+import * as Random from 'expo-random';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -7,12 +8,25 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { randomBytes: null };
+  }
+
+  async componentDidMount() {
+    const bytes = await Random.getRandomBytesAsync(16);
+    this.setState({
+      randomBytes: bytes.toString(),
+    });
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
+        <Text style={styles.instructions}>Some randomness: {this.state.randomBytes}</Text>
       </View>
     );
   }
