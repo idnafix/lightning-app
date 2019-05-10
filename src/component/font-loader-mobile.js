@@ -1,8 +1,11 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
-import { Font } from 'expo';
+import * as Font from 'expo-font';
 import { color } from './style';
+
+// required to setup expo-font
+StyleSheet.setStyleAttributePreprocessor('fontFamily', Font.processFontFamily);
 
 const styles = StyleSheet.create({
   container: {
