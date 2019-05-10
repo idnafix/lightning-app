@@ -13,6 +13,8 @@ PODS:
   - EXFont (4.0.0):
     - UMCore
     - UMFontInterface
+  - EXKeepAwake (4.0.0):
+    - UMCore
   - EXLocalAuthentication (4.0.0):
     - UMConstantsInterface
     - UMCore
@@ -103,6 +105,7 @@ DEPENDENCIES:
   - EXConstants (from `../node_modules/expo-constants/ios`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
   - EXFont (from `../node_modules/expo-font/ios`)
+  - EXKeepAwake (from `../node_modules/expo-keep-awake/ios`)
   - EXLocalAuthentication (from `../node_modules/expo-local-authentication/ios`)
   - EXPermissions (from `../node_modules/expo-permissions/ios`)
   - EXRandom (from `../node_modules/expo-random/ios`)
@@ -160,6 +163,9 @@ EXTERNAL SOURCES:
   EXFont:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-font/ios"
+  EXKeepAwake:
+    :path: !ruby/object:Pathname
+    path: "../node_modules/expo-keep-awake/ios"
   EXLocalAuthentication:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-local-authentication/ios"
@@ -227,6 +233,7 @@ SPEC CHECKSUMS:
   EXConstants: 9fef2c937fa0c8e6182b26cfea29e9a27fbb3009
   EXFileSystem: fc5260fcc461ad675ea1bb56a1d5be4c56e2b556
   EXFont: cc0ae3163b8c8a7a350b5f86157fab71a81d8db8
+  EXKeepAwake: 57e812f4dece2390cf97dc7b9abf3a1e66d51353
   EXLocalAuthentication: 8585931f098c5fd00ff71880906794c577734e33
   EXPermissions: 615f9e58b861a3a82bbf9784483c2fb34e75c751
   EXRandom: 64865f46eecf7f762eadfd099ab858ed3ea90689
